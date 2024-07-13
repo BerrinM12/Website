@@ -1,0 +1,395 @@
+body
+{
+	margin:0px;
+	font-family: Times New Roman;
+}
+
+
+/*a
+{
+  display: inline-block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}*/
+
+@media screen and (max-width: 800px) 
+{
+	.containerVestnici
+	{
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) 
+{
+	.containerVestnici
+	{
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+                                                              
+
+.frame
+{
+	margin: 0px auto;
+	width: 1000px;
+	border: 0px;
+}
+
+/*moqt klas*/
+.box
+{
+	width: 300px;
+	height: 260px;
+	float: left;
+	margin: 5px 15px;
+	border: 1px solid;
+	border-style: ridge;
+	border-width: 5px;
+	overflow: hidden;
+	font-family: Monotype Corsiva;
+	text-align:center;
+	font-size: 25px;
+}
+
+.box_mid
+{
+	width: 300px;
+	height: 260px;
+	float: left;
+	margin: 5px 5px;
+	border: 1px solid;
+	border-style: ridge;
+	border-width: 5px;
+	overflow: hidden;
+	font-family: Monotype Corsiva;
+	text-align: center;
+	font-size: 25px;
+}
+
+/*nav*/
+ul 
+{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color:#4CBABA;
+}
+
+li {float: left;}
+
+li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {background-color:#2D9D9D;}
+li a:hover:not(.active) {background-color:#128E8E;}
+
+.footer
+{
+	height:20px;
+	background:#4CBABA;
+	width:1000px;
+	clear:both;
+}
+
+.big_title /*Випуск 2023 (12А)*/
+{
+	float:right;
+	color:white;
+	font-family:Monotype Corsiva;
+	margin-right:150px;
+	margin-top:6px;
+}
+
+/*home page*/
+.home_img
+{
+	width:360px;
+	float:left;
+}
+
+.home_text
+{
+	float:left;
+	text-align:justify;
+	margin-left:35px;
+	padding-right: 150px;
+	font-size:22px;
+	width: 400px;
+}
+
+.home_textimg
+{
+	width: 100%;
+	margin-bottom: 350px;
+	margin-top: 40px;
+}
+
+/*HOME - vestnicite*/
+.containerVestnici
+{
+	width: 100%;
+	float: left;
+}
+
+.containerBox
+{
+  position: relative;
+  width: auto;
+}
+
+.imageBox 
+{
+  opacity: 1;
+  display: block;
+  width: 230px;
+  height: 400px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  margin: 0px 0px;
+}
+
+.middleBox 
+{
+  /* transition: .5s ease; */
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.containerBox:hover .imageBox {opacity: 0.2;}
+
+.containerBox:hover .middleBox {opacity: 1;}
+
+.textBox 
+{
+  color: white;
+  font-size: 20px;
+  padding: 16px 32px;
+}
+
+.columnBox
+{
+	float: left;
+	padding: 10px;
+	width: 230px;
+  	height: 400px;
+	margin-bottom: 10px;
+}
+
+.rowBox:after 
+{
+	content: "";
+	display: table;
+	clear: both;
+	width: auto;
+}
+
+/*GRID*/
+.row-grid 
+{
+	display: -ms-flexbox; 
+	display: flex;
+	-ms-flex-wrap: wrap; 
+	flex-wrap: wrap;
+	padding: 0px 4px;
+}
+
+ .column-grid 
+{
+	-ms-flex: 25%;
+	flex: 25%;
+	max-width: 24%;
+	padding: 1px 4px;
+}
+  
+.column-grid img
+{
+	margin:8px;
+	float: left;
+	width: 100%;
+}
+
+@media screen and (max-width: 800px) 
+{
+	.column 
+	{
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) 
+{
+	.column 
+	{
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+/* img70 - veseli momenti*/
+.img70container
+{
+	position: relative;
+	text-align: center;
+	color: white;
+	float: left;
+	margin-bottom: 60px;
+}
+
+.img70text
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* slider */
+.containerSlider
+{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.swiper 
+{
+	width: 70%;
+	height: fit-content;
+}
+
+.swiper-slide img
+{
+	width: 100%;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next
+{
+	color: #fff;
+}
+
+.swiper .swiper-pagination-bullet-active
+{
+	background: #fff;
+}
+
+/* buton snimki - veseli momenti */
+.buttonSn 
+{
+	border-radius: 4px;
+	background-color: #128E8E;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	float: left;
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
+  
+.buttonSn span 
+{
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+  
+.buttonSn span:after 
+{
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+  
+.buttonSn:hover span 
+{
+	padding-right: 25px;
+}
+  
+.buttonSn:hover span:after 
+{
+	opacity: 1;
+	right: 0;
+}
+
+/* buton klipove - veseli momenti */
+.buttonVid
+{
+	border-radius: 4px;
+	background-color: #128E8E;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	float: left;
+	margin-left: 510px;
+	margin-bottom: 50px;
+}
+  
+.buttonVid span 
+{
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+  
+.buttonVid span:after 
+{
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+  
+.buttonVid:hover span 
+{
+	padding-right: 25px;
+}
+  
+.buttonVid:hover span:after 
+{
+	opacity: 1;
+	right: 0;
+}
+
+.classmatestext
+{
+	margin-top: 13px;
+}

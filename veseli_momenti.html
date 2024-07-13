@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<title> Весели моменти </title>
+		<link rel="stylesheet" href="vis.css">
+		
+		<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+	</head>
+	
+	<body>
+		<div class="frame">
+			<div class="active">
+				<ul>
+				<li><a href="index.html" > Начало </a></li>
+				<li><a href="classmates.html"> Моят клас </a></li>
+				<li><a href="veseli_momenti.html" class="active"> Весели моменти </a></li>
+				<li class="big_title"><font size="6"> Випуск 2023 (12А) </font></li>
+				</ul>
+			</div>
+
+			<div class="img70container">
+				<img src="pics/ig70eks.jpg" style="width:100%;">
+				<div class="img70text">
+					<font size="6"><h2>Весели моменти</h2>
+					<p> Тук ще видите най-веселите ни заснети<br>
+						моменти от 8-ми до 12-ти клас.</p>
+					</font></div>
+			</div>
+
+			<div class="containerSlider">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+					  	<div class="swiper-slide"><img src="SK/ig70.jpg"></div>
+					  	<div class="swiper-slide"><img src="SK/ig73.jpg"></div>
+					  	<div class="swiper-slide"><img src="SK/ig25.jpg"></div>
+					  	<div class="swiper-slide"><img src="SK/ig4.jpg"></div>
+					</div>
+					
+					<div class="swiper-pagination"></div>
+				  
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+
+			<br>
+			<br>
+			<br>
+			<br>
+			
+			<a href="snimki.html"><button class="buttonSn"><span> Снимки </span></button></a>
+
+			<a href="klipove.html"><button class="buttonVid"><span> Клипове </span></button></a>
+		
+			<div class="footer"><font color="white"><center> Беррин Мустафа | 2023 </center></font></div>
+
+			<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+			<script>
+				const swiper = new Swiper('.swiper', {
+					autoplay: {
+						delay: 3000,
+						disableOnInteraction: false,
+					},
+				loop: true,
+
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				});
+			</script>
+		
+		</div>
+	</body>
+</html>
